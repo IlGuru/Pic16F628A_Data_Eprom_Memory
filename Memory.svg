@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="Memory.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.6682232"
+     inkscape:cx="259.83101"
+     inkscape:cy="902.65786"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:window-width="1600"
+     inkscape:window-height="838"
+     inkscape:window-x="-6"
+     inkscape:window-y="-6"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid2985" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Livello 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="opacity:0.80000000000000004;fill:#d3d7cf;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.91833644999999997;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect2987"
+       width="99.081665"
+       height="224.70583"
+       x="100.45917"
+       y="52.82135"
+       inkscape:export-filename="F:\Elettronica\Pic16F628A_Data_Eprom_Memory\Memory.png"
+       inkscape:export-xdpi="150"
+       inkscape:export-ydpi="150" />
+    <rect
+       style="opacity:0.80000000000000004;fill:#8ae234;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.50000000000000000;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect2989"
+       width="80"
+       height="25"
+       x="110"
+       y="62.362183"
+       inkscape:export-filename="F:\Elettronica\Pic16F628A_Data_Eprom_Memory\Memory.png"
+       inkscape:export-xdpi="150"
+       inkscape:export-ydpi="150" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+       x="114.80577"
+       y="80.425034"
+       id="text2991"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="F:\Elettronica\Pic16F628A_Data_Eprom_Memory\Memory.png"
+       inkscape:export-xdpi="150"
+       inkscape:export-ydpi="150"><tspan
+         sodipodi:role="line"
+         id="tspan2993"
+         x="114.80577"
+         y="80.425034">PIC16F628A</tspan></text>
+    <rect
+       style="opacity:0.80000000000000004;fill:#eeeeec;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.37257379000000002;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect2995"
+       width="79.627426"
+       height="44.627426"
+       x="110.18629"
+       y="92.548477"
+       inkscape:export-filename="F:\Elettronica\Pic16F628A_Data_Eprom_Memory\Memory.png"
+       inkscape:export-xdpi="150"
+       inkscape:export-ydpi="150" />
+    <text
+       xml:space="preserve"
+       style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+       x="150.34595"
+       y="108.00893"
+       id="text2997"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="F:\Elettronica\Pic16F628A_Data_Eprom_Memory\Memory.png"
+       inkscape:export-xdpi="150"
+       inkscape:export-ydpi="150"><tspan
+         sodipodi:role="line"
+         id="tspan2999"
+         x="150.34595"
+         y="108.00893"
+         style="text-align:center;text-anchor:middle">Program Memory</tspan><tspan
+         sodipodi:role="line"
+         x="150.34595"
+         y="118.00893"
+         id="tspan3003"
+         style="text-align:center;text-anchor:middle" /><tspan
+         sodipodi:role="line"
+         x="150.34595"
+         y="128.00893"
+         id="tspan3001"
+         style="text-align:center;text-anchor:middle">2048 Words</tspan></text>
+    <rect
+       style="opacity:0.80000000000000004;fill:#eeeeec;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.42904641999999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3005"
+       width="80.070953"
+       height="125.06404"
+       x="109.96452"
+       y="142.32671"
+       inkscape:export-filename="F:\Elettronica\Pic16F628A_Data_Eprom_Memory\Memory.png"
+       inkscape:export-xdpi="150"
+       inkscape:export-ydpi="150" />
+    <text
+       xml:space="preserve"
+       style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+       x="124.80577"
+       y="157.01584"
+       id="text3007"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="F:\Elettronica\Pic16F628A_Data_Eprom_Memory\Memory.png"
+       inkscape:export-xdpi="150"
+       inkscape:export-ydpi="150"><tspan
+         sodipodi:role="line"
+         id="tspan3009"
+         x="124.80577"
+         y="157.01584">Data Memory</tspan></text>
+    <rect
+       style="opacity:0.8;fill:#729fcf;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3011"
+       width="70"
+       height="45"
+       x="115"
+       y="167.36218"
+       inkscape:export-filename="F:\Elettronica\Pic16F628A_Data_Eprom_Memory\Memory.png"
+       inkscape:export-xdpi="150"
+       inkscape:export-ydpi="150" />
+    <text
+       xml:space="preserve"
+       style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+       x="150.5625"
+       y="185.42659"
+       id="text3013"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="F:\Elettronica\Pic16F628A_Data_Eprom_Memory\Memory.png"
+       inkscape:export-xdpi="150"
+       inkscape:export-ydpi="150"><tspan
+         sodipodi:role="line"
+         id="tspan3015"
+         x="150.5625"
+         y="185.42659"
+         style="text-align:center;text-anchor:middle">SRAM</tspan><tspan
+         sodipodi:role="line"
+         x="150.5625"
+         y="195.42659"
+         id="tspan3017"
+         style="text-align:center;text-anchor:middle">224 Bytes</tspan></text>
+    <rect
+       y="217.36218"
+       x="115"
+       height="45"
+       width="70"
+       id="rect3021"
+       style="opacity:0.8;fill:#fce94f;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       inkscape:export-filename="F:\Elettronica\Pic16F628A_Data_Eprom_Memory\Memory.png"
+       inkscape:export-xdpi="150"
+       inkscape:export-ydpi="150" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text3036"
+       y="237.42638"
+       x="149.92778"
+       style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+       xml:space="preserve"
+       inkscape:export-filename="F:\Elettronica\Pic16F628A_Data_Eprom_Memory\Memory.png"
+       inkscape:export-xdpi="150"
+       inkscape:export-ydpi="150"><tspan
+         style="text-align:center;text-anchor:middle"
+         id="tspan3040"
+         y="237.42638"
+         x="149.92778"
+         sodipodi:role="line">EEPROM</tspan><tspan
+         style="text-align:center;text-anchor:middle"
+         y="247.42638"
+         x="149.92778"
+         sodipodi:role="line"
+         id="tspan3044">128 Bytes</tspan></text>
+  </g>
+</svg>

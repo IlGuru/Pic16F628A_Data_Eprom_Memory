@@ -1,0 +1,61 @@
+In questo articolo viene descritto come accedere in lettura e scrittura un un' area di memoria dati non volatile.
+
+==Abstract==
+
+All'avvio del PIC o a seguito di un reset più o meno previsto, capita di voler conoscere alcuni valori che erano memorizzati o il particolare stato in cui era il programma per ripristinarne le condizioni perse durante il reset, oppure semplicemente di dover leggere il valore di alcune costanti memorizzate nel dispositivo pur mantenendo libera una porzione significativa dei 224 byte di memoria RAM.
+Ad esempio:
+* Memorizzare lo stato acceso o spento di un dispositivo controllato dal PIC prima dello spegnimento o del reset.
+* Memorizzare i dati necessari per programmare i caratteri utente di un display LCD.
+* La tensione di soglia generata dal modulo Voltage Reference a seguito di una calibrazione.
+ 
+E' possibile salvare tutte queste informazioni in un'area di memoria '''non volatile''' che manterrà il proprio contenuto una volta tolta l'alimentazione o resettato il PIC.
+
+==Data Eprom Memory==
+
+{|
+|-
+| <immagine id=14808 name='Memory.png'>Memory.png</immagine> || La Data Emprom Memory indicata in figura con EEPROM, è un'area di 128 byte disponibile in lettura e scrittura durante le normali operazioni di funzionamento anche quando il dispositivo è write protected. 
+L'accesso però ma non avviene alla stessa velocità con cui avviene quello alla RAM, per via del fatto che vi si accede alla Eprom indirettamente.
+In questo articolo utilizzeremo come riferimento il PIC16F628A e le informazioni trattate sono quelle disponibili nel capitolo 13 del [http://ww1.microchip.com/downloads/en/DeviceDoc/40044F.pdf Datasheet].
+
+L'accesso alla Data Eprom Memory avviene tramite 4 Special Function Registers:
+* '''EEDATA''': contiene un data ad 8 bit utilizzato in lettura e scrittura.
+* '''EEADR''': contiene l'indirizzo di memoria a cui si vuole accedere. La Data Eprom Memory del PIC16F628A è di 128 byte da 0x00 a 0x7F quindi questo registro ha una dimensione utile di 7 bit ma l'ottavo deve essere per forza impostato a 0.
+* '''EECON1''': Registro di controllo utilizzato per gestire le operazioni di lettura e scrittura.
+* '''EECON2''': Non è un registro esistente fisicamente nel dispositivo, la sua lettura darà come risultato sempre 0 e è utilizzato solo nel processo di scrittura.
+
+<immagine id=14804 name='Registri.png'>Registri.png</immagine>
+
+:'''WR''' ed '''RD''' inizializzano le procedure di scrittura e lettura, vengono azzerati dall' hardware solo alla fine del processo.
+:'''WREN''' rende possibile la scrittura.
+:'''WRERR''' viene posto ad 1 se l'operazione di scrittura viene interrotta da un reset di MCLR o WTD.
+|}
+
+===Lettura===
+{|
+|-
+| <immagine id=14806 name='Lettura.png'>Lettura.png</immagine> || L'operazione di lettura è molo semplice ed avviene in 3 passaggi:
+* Si imposta EEADR con l'indirizzo della Eprom da leggere: da 0x00 a 0x7F
+* Si imposta EECON1.RD ad 1
+* Si legge il valore del registro EEDATA
+Alla fine lo stato di EECON.RD deve essere tornato a 0
+|}
+
+===Scrittura===
+
+{|
+|-
+| <immagine id=14805 name='Scrittura.png'>Scrittura.png</immagine> || L'operazione di scrittura invece è un pò più lunga:
+* Si imposta EEADR con l'indirizzo della Eprom da leggere: da 0x00 a 0x7F.
+* Si imposta EEDATA con il dato da scrivere: da 0x00 a 0xFF.
+* Si imposta EECON1.WREN ad 1.
+* Si imposta EECON2 con il valore '''0x55'''.
+* Si imposta EECON2 con il valore '''0xAA'''.
+* Si imposta EECON1.WR ad 1.
+: A questo punto avviene la scrittura ed il PIC genera un interrupt ad operazione ultimata settando il flag PIR1.EEIF.
+* Si controlla lo stato del flag PIR1.EEIF per verificare la scrittura avvenuta e lo si resetta.
+: Per verificare che la scrittura sia avvenuta si può controllare anche che lo stato di EECON1.WR sia tornato a 0.
+|}
+
+==Note==
+<small>Versione del documento: 1.0</small>
