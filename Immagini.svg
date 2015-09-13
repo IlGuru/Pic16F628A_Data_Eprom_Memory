@@ -64,9 +64,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.7104219"
-     inkscape:cx="219.27022"
-     inkscape:cy="857.87616"
+     inkscape:zoom="2.3050608"
+     inkscape:cx="231.42401"
+     inkscape:cy="845.25921"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -673,20 +673,20 @@
        inkscape:export-xdpi="150.16251"
        inkscape:export-ydpi="150.16251" />
     <rect
-       style="opacity:0.8;fill:#ffcc00;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="opacity:0.80000000000000004;fill:#d76cff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.50000000000000000;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect4896"
        width="50"
        height="20"
-       x="184"
-       y="292.36218"
+       x="240"
+       y="262.36218"
        inkscape:export-filename="F:\Elettronica\Pic16F628A_Data_Eprom_Memory\Scrittura.png"
        inkscape:export-xdpi="150.16251"
        inkscape:export-ydpi="150.16251" />
     <text
        xml:space="preserve"
        style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
-       x="196.94487"
-       y="306.36218"
+       x="252.94487"
+       y="276.36218"
        id="text4898"
        sodipodi:linespacing="125%"
        inkscape:export-filename="F:\Elettronica\Pic16F628A_Data_Eprom_Memory\Scrittura.png"
@@ -694,17 +694,8 @@
        inkscape:export-ydpi="150.16251"><tspan
          sodipodi:role="line"
          id="tspan4900"
-         x="196.94487"
-         y="306.36218"
+         x="252.94487"
+         y="276.36218"
          style="font-size:10px">EEIF</tspan></text>
-    <path
-       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow2Mend)"
-       d="m 209,282.36218 0,10"
-       id="path4902"
-       inkscape:connector-type="orthogonal"
-       inkscape:connector-curvature="0"
-       inkscape:export-filename="F:\Elettronica\Pic16F628A_Data_Eprom_Memory\Scrittura.png"
-       inkscape:export-xdpi="150.16251"
-       inkscape:export-ydpi="150.16251" />
   </g>
 </svg>

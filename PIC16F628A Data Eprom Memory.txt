@@ -41,21 +41,34 @@ L'accesso alla Data Eprom Memory avviene tramite 4 Special Function Registers:
 Alla fine lo stato di EECON.RD deve essere tornato a 0
 |}
 
+
 ===Scrittura===
 
 {|
 |-
-| <immagine id=14805 name='Scrittura.png'>Scrittura.png</immagine> || L'operazione di scrittura invece è un pò più lunga:
+| <immagine id=14809 name='Scrittura.png'>Scrittura.png</immagine> || L'operazione di scrittura invece è un pò più lunga:
 * Si imposta EEADR con l'indirizzo della Eprom da leggere: da 0x00 a 0x7F.
 * Si imposta EEDATA con il dato da scrivere: da 0x00 a 0xFF.
 * Si imposta EECON1.WREN ad 1.
 * Si imposta EECON2 con il valore '''0x55'''.
 * Si imposta EECON2 con il valore '''0xAA'''.
 * Si imposta EECON1.WR ad 1.
-: A questo punto avviene la scrittura ed il PIC genera un interrupt ad operazione ultimata settando il flag PIR1.EEIF.
-* Si controlla lo stato del flag PIR1.EEIF per verificare la scrittura avvenuta e lo si resetta.
-: Per verificare che la scrittura sia avvenuta si può controllare anche che lo stato di EECON1.WR sia tornato a 0.
+
+: A questo punto avviene la scrittura e per verificare che sia stata eseguita si può controllare che il PIC abbia resettato lo stato di EECON1.WR riportandolo a 0.
+: Nel malaugurato caso che proprio in questo momento sia avvenuto in reset, dopo il riavvio troveremo il flag EECON1.WRERR settato e dovrà quenti essere riportato a 0.
+
+
+Se gli interrupt sono abilitati, il PIC dopo la scrittura genera un interrupt che dovrà essere gestito nella Interrupt Service Routine dove lo stato del flag PIR1.EEIF deve essere riportato a 0.
 |}
+
+====Interrupt====
+<immagine id=14811 name='InterruptCPU.png'>InterruptCPU.png</immagine>
+La scrittura nella Eprom genera un interrupt nel PIC, il quale setta ad 1 il flag '''PIR1.EEIF''' che va resettato nella Interrupt Service Routine per poter ricevere ulteriori interrupt di scrittura.
+
+Se non si vuole generare nessun interrupt, prima della scrittura si possono modificare i flag di Enable nella catena di inerrupt mostrata nella figura:
+* '''PIE1.EEIE''' = 0 inibisce l'interrupt su scrittura nella Eprom.
+* '''INTCON.PEIE''' = 0 inibisce ogni interrupt proveniente dalle periferiche.
+* '''INTCON.GIE''' = 0 inibisce ogni interrupt del PIC.
 
 ==Note==
 <small>Versione del documento: 1.0</small>
