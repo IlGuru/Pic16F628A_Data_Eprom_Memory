@@ -15,7 +15,7 @@ E' possibile salvare tutte queste informazioni in un'area di memoria '''non vola
 
 {|
 |-
-| <immagine id=14808 name='Memory.png'>Memory.png</immagine> || La Data Emprom Memory indicata in figura con EEPROM, è un'area di 128 byte disponibile in lettura e scrittura durante le normali operazioni di funzionamento anche quando il dispositivo è write protected. 
+| <immagine id=14808 name='Memory.png'></immagine> || La Data Emprom Memory indicata in figura con EEPROM, è un'area di 128 byte disponibile in lettura e scrittura durante le normali operazioni di funzionamento anche quando il dispositivo è write protected. 
 L'accesso però non avviene alla stessa velocità con cui avviene quello alla RAM, per via del fatto che vi si accede alla Eprom indirettamente.
 In questo articolo utilizzeremo come riferimento il PIC16F628A e le informazioni trattate sono quelle disponibili nel capitolo 13 del [http://ww1.microchip.com/downloads/en/DeviceDoc/40044F.pdf Datasheet].
 
@@ -25,7 +25,7 @@ L'accesso alla Data Eprom Memory avviene tramite 4 Special Function Registers:
 * '''EECON1''': Registro di controllo utilizzato per gestire le operazioni di lettura e scrittura.
 * '''EECON2''': Non è un registro esistente fisicamente nel dispositivo, la sua lettura darà come risultato sempre 0 e è utilizzato solo nel processo di scrittura.
 
-<immagine id=14804 name='Registri.png'>Registri.png</immagine>
+<immagine id=14804 name='Registri.png'></immagine>
 
 :'''WR''' ed '''RD''' inizializzano le procedure di scrittura e lettura, vengono azzerati dall' hardware solo alla fine del processo.
 :'''WREN''' rende possibile la scrittura.
@@ -35,7 +35,7 @@ L'accesso alla Data Eprom Memory avviene tramite 4 Special Function Registers:
 ===Lettura===
 {|
 |-
-| <immagine id=14806 name='Lettura.png'>Lettura.png</immagine> || L'operazione di lettura è molto elementare ed avviene in 3 passaggi:
+| <immagine id=14806 name='Lettura.png'></immagine> || L'operazione di lettura è molto elementare ed avviene in 3 passaggi:
 * Si imposta EEADR con l'indirizzo della Eprom da leggere: da 0x00 a 0x7F
 * Si imposta EECON1.RD ad 1
 * Si legge il valore del registro EEDATA
@@ -47,7 +47,7 @@ Alla fine lo stato di EECON.RD deve essere tornato a 0
 
 {|
 |-
-| <immagine id=14809 name='Scrittura.png'>Scrittura.png</immagine> || L'operazione di scrittura invece è un pò più lunga:
+| <immagine id=14809 name='Scrittura.png'></immagine> || L'operazione di scrittura invece è un pò più lunga:
 * Si imposta EEADR con l'indirizzo della Eprom da leggere: da 0x00 a 0x7F.
 * Si imposta EEDATA con il dato da scrivere: da 0x00 a 0xFF.
 * Si imposta EECON1.WREN ad 1.
@@ -63,7 +63,7 @@ Se gli interrupt sono abilitati, il PIC dopo la scrittura genera un interrupt ch
 |}
 
 ====Interrupt====
-<immagine id=14811 name='InterruptCPU.png'>InterruptCPU.png</immagine>
+<immagine id=14811 name='InterruptCPU.png'></immagine>
 La scrittura nella Eprom genera un interrupt nel PIC, il quale setta ad 1 il flag '''PIR1.EEIF''' che va resettato nella Interrupt Service Routine per poter ricevere ulteriori interrupt di scrittura.
 
 Se non si vuole generare nessun interrupt, prima della scrittura si possono modificare i flag di Enable nella catena di inerrupt mostrata nella figura:
